@@ -7,7 +7,6 @@ import { writeFileSync } from 'fs';
 
 import chalk from 'chalk';
 import { Command, Option } from 'commander';
-import dashify from 'dashify';
 import { first, isEmpty, lowerCase } from 'lodash';
 import prompts from 'prompts';
 

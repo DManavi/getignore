@@ -1,6 +1,7 @@
 
 # directories
 .github/
+artifact/
 bin/
 dist/
 output/

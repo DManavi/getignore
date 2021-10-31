@@ -1,13 +1,14 @@
 {
-  "name": "getignore",
+  "name": "getignore-cmd",
   "version": "1.0.0",
+  "private": false,
   "main": "./dist/bin/cli.js",
-  "bin": "./dist/bin/cli.js",
+  "bin": {
+    "getignore": "./dist/bin/cli.js"
+  },
   "scripts": {
-    "clean": "rimraf dist artifact",
     "compile": "tsc -b ./tsconfig.json",
-    "build": "pkg --no-bytecode --compress GZip .",
-    "pack": "run-s clean compile build"
+    "build:native": "pkg --no-bytecode --compress GZip ."
   },
   "repository": {
     "type": "git",
@@ -44,7 +45,6 @@
     "axios": "^0.21.4",
     "chalk": "^4.1.2",
     "commander": "^8.2.0",
-    "dashify": "^2.0.0",
     "lodash": "^4.17.21",
     "prompts": "^2.4.1"
   },

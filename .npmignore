@@ -1,0 +1,14 @@
+
+# directories
+.github/
+artifact/
+bin/
+dist/
+output/
+src/
+
+# files
+.bashrc
+.gitignore
+makefile
+tsconfig.json

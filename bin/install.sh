@@ -42,11 +42,7 @@ fi
 
 
 # Get the most recent version
-if is_available "curl"; then
-    LATEST_VERSION=$(curl -L --silent https://api.github.com/repos/getignore/getignore/releases/latest | grep -oP '"tag_name": "\K(.*)(?=")')
-elif is_available "wget"; then
-    LATEST_VERSION=$(wget -q -O - https://api.github.com/repos/getignore/getignore/releases/latest | grep -oP '"tag_name": "\K(.*)(?=")')
-fi
+LATEST_VERSION=$(curl -L --silent https://api.github.com/repos/getignore/getignore/releases/latest | python3 -c "import sys, json; print(json.load(sys.stdin)['tag_name'])")
 
 # Download OS-specific artifact
 ARTIFACT_URL="https://github.com/GetIgnore/getignore/releases/download/${LATEST_VERSION}/getignore-${OS_NAME}_${CPU_ARCH_NAME}.zip"

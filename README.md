@@ -14,7 +14,7 @@ There are several methods for installing this utility.
 The easiest way of using the command is to use `npx`. Run the command below in your terminal.
 
 ```sh
-    npx getignore-cmd --help
+npx getignore-cmd --help
 ```
 
 ### NPM
@@ -24,8 +24,8 @@ The easiest way of using the command is to use `npx`. Run the command below in y
 In this method, the package is installed as a global dependency using `npm`.
 
 ```sh
-    npm install -g getignore-cmd
-    getignore --help
+npm install -g getignore-cmd
+getignore --help
 ```
 
 ### Shell
@@ -39,11 +39,11 @@ In this method, the package is installed directly to the user-specific bin folde
 #### wget version
 
 ```sh
-    wget -qO- https://raw.githubusercontent.com/GetIgnore/getignore/master/bin/install.sh | bash
+wget -q -O- https://raw.githubusercontent.com/GetIgnore/getignore/master/bin/install.sh | bash
 ```
 
 #### curl version
 
 ```sh
-    curl -o- https://raw.githubusercontent.com/GetIgnore/getignore/master/bin/install.sh | bash
+curl -o- -L https://raw.githubusercontent.com/GetIgnore/getignore/master/bin/install.sh | bash
 ```

@@ -2,8 +2,7 @@
 # directories
 .github/
 artifact/
-bin/
-dist/
+bin/*.sh
 output/
 src/
 

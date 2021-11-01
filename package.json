@@ -1,10 +1,10 @@
 {
   "name": "getignore-cmd",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "private": false,
   "main": "./dist/bin/cli.js",
   "bin": {
-    "getignore": "./dist/bin/cli.js"
+    "getignore": "./bin/getignore.js"
   },
   "scripts": {
     "compile": "tsc -b ./tsconfig.json",

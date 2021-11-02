@@ -65,8 +65,8 @@ if artifact_api_response.status < 200 or artifact_api_response.status > 299:
 
 # extract artifact to the OS-specific bin directory
 os_bin_dir = dict({
-    "linux": os.path.join("/", "usr", "local", "bin"),
-    "mac": os.path.join("/", "usr", "local", "bin"),
+    "linux": os.path.join("~/", "usr", "local", "bin"),
+    "mac": os.path.join("~"),
 })
 
 extract_target_path = os_bin_dir.get(os_name)

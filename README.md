@@ -41,13 +41,13 @@ In this method, the package is installed directly to the user-specific bin folde
 ##### wget version
 
 ```sh
-wget -q -O- https://raw.githubusercontent.com/GetIgnore/getignore/master/bin/install.py | bash
+wget -q -O- https://raw.githubusercontent.com/GetIgnore/getignore/master/bin/install.py | python3
 ```
 
 ##### curl version
 
 ```sh
-curl -o- -L https://raw.githubusercontent.com/GetIgnore/getignore/master/bin/install.py | bash
+curl -o- -L https://raw.githubusercontent.com/GetIgnore/getignore/master/bin/install.py | python3
 ```
 
 
@@ -56,12 +56,11 @@ curl -o- -L https://raw.githubusercontent.com/GetIgnore/getignore/master/bin/ins
 ##### wget version
 
 ```sh
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/GetIgnore/getignore/master/bin/install.py)"
+curl -fsSL https://raw.githubusercontent.com/GetIgnore/getignore/master/bin/install.py | python3 -
 ```
 
 ##### curl version
 
 ```sh
-sh -c "$(wget -fsSL https://raw.githubusercontent.com/GetIgnore/getignore/master/bin/install.py)"
+wget -q -O- https://raw.githubusercontent.com/GetIgnore/getignore/master/bin/install.py | python3 -
 ```
-

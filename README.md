@@ -36,14 +36,32 @@ getignore --help
 
 In this method, the package is installed directly to the user-specific bin folder location (which may be vary in different OS).
 
-#### wget version
+#### Linux
+
+##### wget version
 
 ```sh
-wget -q -O- https://raw.githubusercontent.com/GetIgnore/getignore/master/bin/install.sh | bash
+wget -q -O- https://raw.githubusercontent.com/GetIgnore/getignore/master/bin/install.py | bash
 ```
 
-#### curl version
+##### curl version
 
 ```sh
-curl -o- -L https://raw.githubusercontent.com/GetIgnore/getignore/master/bin/install.sh | bash
+curl -o- -L https://raw.githubusercontent.com/GetIgnore/getignore/master/bin/install.py | bash
 ```
+
+
+#### MacOS
+
+##### wget version
+
+```sh
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/GetIgnore/getignore/master/bin/install.py)"
+```
+
+##### curl version
+
+```sh
+sh -c "$(wget -fsSL https://raw.githubusercontent.com/GetIgnore/getignore/master/bin/install.py)"
+```
+
